@@ -1,10 +1,10 @@
 <template>
   <div id="app">
+    <iframe src="silence.mp3" allow="autoplay" id="audio" hidden ></iframe>
+        <audio v-if="!yes" src="bonde.mp3" autoplay></audio>
+        <audio v-if="yes" src="yes.mp3" autoplay></audio>
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 all">
       <h1 style="color: white;">Quer ficar comigo?</h1>
-      <iframe src="silence.mp3" allow="autoplay" id="audio" hidden ></iframe>
-      <audio v-if="!yes" src="bonde.mp3" autoplay></audio>
-      <audio v-if="yes" src="yes.mp3" autoplay></audio>
       <div class="container" style="height: 50em;">
         <v-btn @click="clickYes" v-model="yes" style="width: 8em; left: -12%; height: 4em;" id="yes">
           Sim
