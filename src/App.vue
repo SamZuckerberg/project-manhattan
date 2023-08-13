@@ -13,6 +13,7 @@
           value="Não">
           Não
         </v-btn>
+        
       </div>
     </div>
     <v-img v-if="yes"
